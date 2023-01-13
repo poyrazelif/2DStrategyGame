@@ -84,7 +84,7 @@
       <option name="number" value="Default" />
       <option name="presentableId" value="Default" />
       <updated>1673540974746</updated>
-      <workItem from="1673540976698" duration="15739000" />
+      <workItem from="1673540976698" duration="27128000" />
     </task>
     <servers />
   </component>
@@ -95,25 +95,6 @@
   <component name="UnityUnitTestConfiguration" currentTestLauncher="EditMode" />
   <component name="VcsManagerConfiguration">
     <option name="CLEAR_INITIAL_COMMIT_MESSAGE" value="true" />
-  </component>
-  <component name="XDebuggerManager">
-    <breakpoint-manager>
-      <breakpoints>
-        <line-breakpoint enabled="true" type="DotNet Breakpoints">
-          <url>file://$PROJECT_DIR$/Assets/Scripts/PlayerController.cs</url>
-          <line>20</line>
-          <properties documentPath="C:\Users\poyra\Documents\GitHub\2DStrategyGame\2DStrategy\Assets\Scripts\PlayerController.cs" initialLine="23" containingFunctionPresentation="method 'Update'">
-            <startOffsets>
-              <option value="527" />
-            </startOffsets>
-            <endOffsets>
-              <option value="528" />
-            </endOffsets>
-          </properties>
-          <option name="timeStamp" value="1" />
-        </line-breakpoint>
-      </breakpoints>
-    </breakpoint-manager>
   </component>
   <component name="XSLT-Support.FileAssociations.UIState">
     <expand />
