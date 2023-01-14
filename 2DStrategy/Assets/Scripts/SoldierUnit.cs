@@ -8,7 +8,7 @@ using Toolbox;
 using DG.Tweening;
 
 
-public class SoldierUnit : MonoBehaviour
+public class SoldierUnit : Product
 {
     public Tilemap tilemap;
     public List<Vector3> wayPoints = new List<Vector3>();

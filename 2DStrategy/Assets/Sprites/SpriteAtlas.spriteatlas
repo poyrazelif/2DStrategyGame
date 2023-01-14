@@ -38,25 +38,34 @@ SpriteAtlas:
     - {fileID: 2800000, guid: 09769f0b7b7faf74999bef4e6ca48d16, type: 3}
     - {fileID: 2800000, guid: 021907f227a049e40b4234e459451efd, type: 3}
     - {fileID: 2800000, guid: edc6e9e9eec481e42aa40656291effbe, type: 3}
+    - {fileID: 2800000, guid: 3876d92d5dc592739bb4bc02db9cef67, type: 3}
+    - {fileID: 2800000, guid: 7414584b0a86c8e8b8bc27d172de10dc, type: 3}
+    - {fileID: 2800000, guid: a9ce4af7a31a706ac9dd9db2a51850a0, type: 3}
     bindAsDefault: 1
     isAtlasV2: 0
     cachedData: {fileID: 0}
   m_MasterAtlas: {fileID: 0}
   m_PackedSprites:
   - {fileID: 21300000, guid: 021907f227a049e40b4234e459451efd, type: 3}
+  - {fileID: 21300000, guid: a9ce4af7a31a706ac9dd9db2a51850a0, type: 3}
   - {fileID: 21300000, guid: 21e65559107eeb14590b601e0e668ee5, type: 3}
   - {fileID: 21300000, guid: 325f4579683eff24c81eb687b0e80a33, type: 3}
   - {fileID: 21300000, guid: edc6e9e9eec481e42aa40656291effbe, type: 3}
   - {fileID: 21300000, guid: 09769f0b7b7faf74999bef4e6ca48d16, type: 3}
+  - {fileID: 21300000, guid: 7414584b0a86c8e8b8bc27d172de10dc, type: 3}
   - {fileID: 21300000, guid: 10aed0bb942816e4aa62c522dee1b4f9, type: 3}
+  - {fileID: 21300000, guid: 3876d92d5dc592739bb4bc02db9cef67, type: 3}
   - {fileID: 21300000, guid: da815d2f6d670394ca40b78eafc77af2, type: 3}
   m_PackedSpriteNamesToIndex:
   - powerplant1
+  - panel_02
   - barrack1
   - plant-house
   - 05204083667fe58cdee9b37968b37623
   - tree-house
+  - panel_element_26
   - rock-2
+  - panel_06
   - rock-1
   m_RenderDataMap: {}
   m_Tag: SpriteAtlas
