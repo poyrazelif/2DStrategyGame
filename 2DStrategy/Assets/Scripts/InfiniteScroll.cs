@@ -55,11 +55,11 @@ public class InfiniteScroll : MonoBehaviour, IBeginDragHandler, IDragHandler, IS
 
         if (positiveDrag)
         {
-            newPos.y = endItem.position.y - scrollContent.ChildHeight - scrollContent.ItemSpacing;
+            newPos.y = endItem.position.y - scrollContent.ChildHeight*2;
         }
         else
         {
-            newPos.y = endItem.position.y + scrollContent.ChildHeight + scrollContent.ItemSpacing;
+            newPos.y = endItem.position.y + scrollContent.ChildHeight *2;
         }
 
         currItem.position = newPos;
@@ -68,8 +68,8 @@ public class InfiniteScroll : MonoBehaviour, IBeginDragHandler, IDragHandler, IS
 
     private bool ReachedThreshold(Transform item)
     {
-        float posYThreshold = transform.position.y + scrollContent.Height * 0.5f + outOfBoundsThreshold;
-        float negYThreshold = transform.position.y - scrollContent.Height * 0.5f - outOfBoundsThreshold;
+        float posYThreshold = transform.position.y + scrollContent.Height * 0.5f + scrollContent.Height/2;
+        float negYThreshold = transform.position.y - scrollContent.Height * 0.5f - scrollContent.Height/2;
         return positiveDrag ? item.position.y - scrollContent.ChildWidth * 0.5f > posYThreshold : 
             item.position.y + scrollContent.ChildWidth * 0.5f < negYThreshold;
     }

@@ -3,15 +3,28 @@ using System.Collections;
 using System.Collections.Generic;
 using UnityEngine;
 using TMPro;
+using UnityEngine.Events;
+using UnityEngine.UI;
 
 public class Timer : MonoBehaviour
 {
-   [SerializeField] private int second;
-   [SerializeField] private int minute;
+   private int second;
+    private int minute;
 
    [SerializeField] private TextMeshProUGUI timeText;
+   [SerializeField] private TextMeshPro timeTextInGame;
 
+   [Serializable]public class onTimeFinished: UnityEvent { }
+   public onTimeFinished TimeFinished;
+   
+   [Serializable]public class onTimeStarted: UnityEvent { }
+   public onTimeFinished TimeStarted;
 
+   public void SetTime(int min, int sec)
+   {
+      minute = min;
+      second = sec;
+   }
    public void WaitTime()
    {
       int sec = 60 * minute + second;
@@ -20,12 +33,27 @@ public class Timer : MonoBehaviour
 
    IEnumerator CO_Wait(int secondtime)
    {
+      if (secondtime <= 0)
+      {
+         yield break;
+      }
+
+      TimeStarted.Invoke();
+      
       int min= (int) secondtime / 60;
       int sec =  secondtime % 60;
-      
-      timeText.gameObject.SetActive(true);
-      timeText.text = min.ToString("00") + ":" + sec.ToString("00");
+      if (timeText != null)
+      {
+         timeText.gameObject.SetActive(true);
+         timeText.text = min.ToString("00") + ":" + sec.ToString("00");
+      }
 
+      if (timeTextInGame != null)
+      {
+         timeTextInGame.gameObject.SetActive(true);
+         timeTextInGame.text = min.ToString("00") + ":" + sec.ToString("00");
+      }
+      
       for(int i=0;i<secondtime;i++)
       {
         
@@ -41,12 +69,23 @@ public class Timer : MonoBehaviour
             yield return new WaitForSecondsRealtime(1);
          }
         
-         timeText.text = min.ToString("00") + ":" + sec.ToString("00");
+         if (timeText != null)
+            timeText.text = min.ToString("00") + ":" + sec.ToString("00");
+         
+         if(timeTextInGame!=null)
+            timeTextInGame.text = min.ToString("00") + ":" + sec.ToString("00");
       }
 
-      timeText.gameObject.SetActive(false); 
+      if (timeText != null)
+         timeText.gameObject.SetActive(false); 
+      
+      if (timeTextInGame != null)
+         timeTextInGame.gameObject.SetActive(false); 
       //ButtonActive
-      Debug.Log("buttonactive");
+      
+      TimeFinished.Invoke();
+      /*button.interactable = true;
+      Debug.Log("buttonactive");*/
             
    }
 }

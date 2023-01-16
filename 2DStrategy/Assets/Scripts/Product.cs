@@ -4,6 +4,6 @@ using UnityEngine;
 
 public class Product : MonoBehaviour
 {
-    public Vector2 size;
+    public ProductData productData;
 
 }

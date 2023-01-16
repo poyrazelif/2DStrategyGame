@@ -29,7 +29,7 @@ public class PlayerController : MonoBehaviour
          }
       }
 
-      if (Input.GetMouseButton(0) && SelectedObject.tag=="Movable")
+      if (Input.GetMouseButton(0) &&SelectedObject &&SelectedObject.tag=="Movable")
       {
          Vector3 position = offset + GetMouseWorldPosition();
          SelectedObject.transform.position=BuildingSystem.Instance.SnapCoordinate(position);
@@ -56,6 +56,7 @@ public class PlayerController : MonoBehaviour
    public void SelectObject(GameObject selectedObject)
    {
       SelectedObject = selectedObject;
+      EventManager.SelectedObjectChanged(selectedObject.GetComponent<Product>().productData);
       if (SelectedObject.tag == "Movable")
       {
          offset = SelectedObject.transform.position - GetMouseWorldPosition();

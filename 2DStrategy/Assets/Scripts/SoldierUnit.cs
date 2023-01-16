@@ -13,7 +13,7 @@ public class SoldierUnit : Product
     public Tilemap tilemap;
     public List<Vector3> wayPoints = new List<Vector3>();
     private List<Animator> animatorList = new List<Animator>();
-    public LineRenderer linePath;
+   // public LineRenderer linePath;
     private bool isTurnedLeft=true;
 
     private void Start()
@@ -39,11 +39,11 @@ public class SoldierUnit : Product
         PlayAnim("Walk");
      
         wayPoints = AStar.FindPathClosest(tilemap, transform.position, TargetPosition);
-        if (wayPoints != null)
+        /*if (wayPoints != null)
         {
             linePath.positionCount = wayPoints.Count;
             linePath.SetPositions(wayPoints.ToArray());
-        }
+        }*/
 
         foreach (Vector3 point in wayPoints)
         {

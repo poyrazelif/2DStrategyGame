@@ -9,9 +9,12 @@
   </component>
   <component name="HighlightingSettingsPerFile">
     <setting file="file://$PROJECT_DIR$/Assets/Scripts/InfiniteScroll.cs" root0="FORCE_HIGHLIGHTING" />
+    <setting file="file://$PROJECT_DIR$/Assets/Scripts/InformationPanelConfigure.cs" root0="FORCE_HIGHLIGHTING" />
     <setting file="file://$PROJECT_DIR$/Assets/Scripts/Product.cs" root0="FORCE_HIGHLIGHTING" />
+    <setting file="file://$PROJECT_DIR$/Assets/Scripts/ProductData.cs" root0="FORCE_HIGHLIGHTING" />
     <setting file="file://$PROJECT_DIR$/Assets/Scripts/ScrollContent.cs" root0="FORCE_HIGHLIGHTING" />
     <setting file="file://$PROJECT_DIR$/Assets/Scripts/Singleton.cs" root0="FORCE_HIGHLIGHTING" />
+    <setting file="file://$PROJECT_DIR$/../../Grinder/Assets/GP Hive/Game/ObjectPooling.cs" root0="SKIP_HIGHLIGHTING" />
     <setting file="file://$PROJECT_DIR$/../../SpinWheel/CS_SpinWheel/Assets/Scripts/ObjectPool.cs" root0="SKIP_HIGHLIGHTING" />
     <setting file="file://$PROJECT_DIR$/../../SpinWheel/CS_SpinWheel/Assets/Scripts/Singleton.cs" root0="SKIP_HIGHLIGHTING" />
   </component>
@@ -86,7 +89,7 @@
       <option name="number" value="Default" />
       <option name="presentableId" value="Default" />
       <updated>1673540974746</updated>
-      <workItem from="1673540976698" duration="40545000" />
+      <workItem from="1673540976698" duration="66610000" />
     </task>
     <servers />
   </component>
@@ -103,13 +106,13 @@
       <breakpoints>
         <line-breakpoint enabled="true" type="DotNet Breakpoints">
           <url>file://$PROJECT_DIR$/Assets/Scripts/Timer.cs</url>
-          <line>44</line>
+          <line>76</line>
           <properties documentPath="C:\Users\poyra\Documents\GitHub\2DStrategyGame\2DStrategy\Assets\Scripts\Timer.cs" initialLine="32" containingFunctionPresentation="method 'CO_Wait'">
             <startOffsets>
-              <option value="1045" />
+              <option value="1899" />
             </startOffsets>
             <endOffsets>
-              <option value="1046" />
+              <option value="1900" />
             </endOffsets>
           </properties>
           <option name="timeStamp" value="2" />

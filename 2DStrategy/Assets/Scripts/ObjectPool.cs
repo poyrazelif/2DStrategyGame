@@ -26,13 +26,16 @@ public class ObjectPool : Singleton<ObjectPool>
             GameObject _objectToReturn = null;
             foreach (PoolObjects pool in objects)
             {
-                foreach (var _pooledObject in pool.pooledObjects)
+                if (pool.name == name)
                 {
-                    if (_pooledObject.activeInHierarchy)
-                        continue;
+                    foreach (var _pooledObject in pool.pooledObjects)
+                    {
+                        if (_pooledObject.activeInHierarchy)
+                            continue;
 
-                    _objectToReturn = _pooledObject;
-                    break;
+                        _objectToReturn = _pooledObject;
+                        break;
+                    }
                 }
             }
             return _objectToReturn;

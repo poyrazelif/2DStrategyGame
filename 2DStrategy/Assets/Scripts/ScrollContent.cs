@@ -51,7 +51,7 @@ public class ScrollContent : MonoBehaviour
         for (int i = 0; i < rtChildren.Length; i++)
         {
             Vector2 childPos = rtChildren[i].localPosition;
-            childPos.y = originY + posOffset + i * (childHeight + itemSpacing);
+            childPos.y = originY + posOffset + i * (childHeight +childHeight);
             rtChildren[i].localPosition = childPos;
         }
     }

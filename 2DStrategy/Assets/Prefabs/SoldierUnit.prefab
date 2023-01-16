@@ -52,6 +52,7 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 062b379763798ca419225938ea18898f, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
+  productData: {fileID: 11400000, guid: 5626384adf5f8ae4dab6399d6a46b107, type: 2}
   tilemap: {fileID: 0}
   wayPoints: []
   linePath: {fileID: 0}
