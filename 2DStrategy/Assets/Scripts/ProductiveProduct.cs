@@ -23,6 +23,7 @@ public class ProductiveProduct :Product
     {
       GameObject Obj = ObjectPool.Instance.GetFromPool(producedThing.ProductName);
       Obj.transform.position = BuildingSystem.Instance.SnapCoordinate(SpawnPosition.position);
+      Obj.transform.position = new Vector3(Obj.transform.position.x, Obj.transform.position.y, SpawnPosition.position.z);
       Obj.transform.localScale=Vector3.one;
       Obj.SetActive(true);
     }
