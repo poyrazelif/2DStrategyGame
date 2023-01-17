@@ -39,7 +39,7 @@ public class InformationPanelConfigure : MonoBehaviour
             {
             GameObject ProducePanel = ObjectPool.Instance.GetFromPool("ProducePanel");
             ListedProducePanels.Add(ProducePanel);
-            Debug.Log(ProducePanel.transform.GetChild(0));
+
             ProducePanel.transform.GetChild(0).GetComponent<Image>().sprite = productData.ProducedThings[i].ProductSprite;
             ProducePanel.transform.SetParent(produceListParent);
             ProducePanel.transform.localScale=Vector3.one;

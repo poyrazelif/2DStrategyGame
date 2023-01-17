@@ -12,7 +12,7 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 54a19d7d40ab1fc43b5ced161e6a57e1, type: 3}
   m_Name: Barrack2Data
   m_EditorClassIdentifier: 
-  ProductName: Barrack
+  ProductName: BARRACK 2
   ProductSize: {x: 5, y: 2, z: 1}
   ProductSprite: {fileID: 21300000, guid: 0bdbdc707108b534583c65a2b978d37c, type: 3}
   ProductPanelWaitTimeSec: 10

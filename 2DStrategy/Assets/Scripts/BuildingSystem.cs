@@ -44,12 +44,12 @@ public class BuildingSystem : Singleton<BuildingSystem>
       return array; 
    }
 
-   public bool CanBePlace(Product product)
+   public bool CanBePlace(Building building)
    {
       BoundsInt area = new BoundsInt();
 
-      area.size = product.productData.ProductSize;
-      area.position =GridLayout.WorldToCell(product.startCellPos.position) ;
+      area.size = building.productData.ProductSize;
+      area.position =GridLayout.WorldToCell(building.startCellPos.position) ;
 
       TileBase[] baseArray = GetTileBlock(tilemap, area);
 

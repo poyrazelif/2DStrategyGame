@@ -3,7 +3,7 @@ using System.Collections;
 using System.Collections.Generic;
 using UnityEngine;
 
-public class ProductiveProduct :Product
+public class ProductiveProduct :Building
 {
   [SerializeField] private Transform SpawnPosition;
   private Timer timer;

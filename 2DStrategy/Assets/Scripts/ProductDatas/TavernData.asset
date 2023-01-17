@@ -10,14 +10,13 @@ MonoBehaviour:
   m_Enabled: 1
   m_EditorHideFlags: 0
   m_Script: {fileID: 11500000, guid: 54a19d7d40ab1fc43b5ced161e6a57e1, type: 3}
-  m_Name: BarrackData
+  m_Name: TavernData
   m_EditorClassIdentifier: 
-  ProductName: BARRACK
-  ProductSize: {x: 4, y: 4, z: 1}
-  ProductSprite: {fileID: 21300000, guid: f5998e4e153d9274999360612136c143, type: 3}
-  ProductPanelWaitTimeSec: 0
-  ProductPanelWaitTimeMin: 0
-  ProducedThings:
-  - {fileID: 11400000, guid: 5626384adf5f8ae4dab6399d6a46b107, type: 2}
+  ProductName: TAVERN
+  ProductSize: {x: 5, y: 3, z: 1}
+  ProductSprite: {fileID: 21300000, guid: 1517bacd8c24621408d67e0c89cc9e1b, type: 3}
+  ProductPanelWaitTimeSec: 15
+  ProductPanelWaitTimeMin: 4
+  ProducedThings: []
   ProduceTimeMin: 0
-  ProduceTimeSec: 59
+  ProduceTimeSec: 0

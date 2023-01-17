@@ -6,9 +6,10 @@ using UnityEngine;
 public class PlayerController : MonoBehaviour
 {
    public GameObject SelectedObject;
-   private Product selectedProduct;
+   //private Product selectedProduct;
    private Vector3 selectedObjLastPos;
    private Vector3 selectedObjLastStartPos;
+   private Building selectedBuilding;
    private Vector3 offset;
    private Camera _camera;
 
@@ -41,23 +42,23 @@ public class PlayerController : MonoBehaviour
          Vector3 position = offset + GetMouseWorldPosition();
          SelectedObject.transform.position=BuildingSystem.Instance.SnapCoordinate(position);
          
-         if(BuildingSystem.Instance.CanBePlace(selectedProduct)) {selectedProduct.ChangeColor(Color.white); }
-         else { selectedProduct.ChangeColor(Color.red); }
+         if(BuildingSystem.Instance.CanBePlace(selectedBuilding)) {selectedBuilding.ChangeColor(Color.white); }
+         else { selectedBuilding.ChangeColor(Color.red); }
       }
 
       if (Input.GetMouseButtonUp(0) && SelectedObject && SelectedObject.tag == "Movable")
       {
-         if(BuildingSystem.Instance.CanBePlace(selectedProduct))
+         if(BuildingSystem.Instance.CanBePlace(selectedBuilding))
          {
-            BuildingSystem.Instance.TakeArea(selectedProduct.startCellPos.position, selectedProduct.productData.ProductSize);
-            BuildingSystem.Instance.RemoveArea(selectedObjLastStartPos,selectedProduct.productData.ProductSize);
+            BuildingSystem.Instance.TakeArea(selectedBuilding.startCellPos.position, selectedBuilding.productData.ProductSize);
+            BuildingSystem.Instance.RemoveArea(selectedObjLastStartPos,selectedBuilding.productData.ProductSize);
          }
          else
          {
             SelectedObject.transform.position = selectedObjLastPos;
          }
 
-         selectedProduct.ChangeColor(Color.white);
+         selectedBuilding.ChangeColor(Color.white);
          UnSelectObject();
       }
      
@@ -78,7 +79,7 @@ public class PlayerController : MonoBehaviour
    public void UnSelectObject()
    {
       SelectedObject = null;
-      selectedProduct = null;
+     // selectedProduct = null;
       selectedObjLastPos = Vector3.zero;
       selectedObjLastStartPos = Vector3.zero;
    }
@@ -86,11 +87,14 @@ public class PlayerController : MonoBehaviour
    {
       SelectedObject = selectedObject;
       selectedObjLastPos = SelectedObject.transform.position;
-      selectedProduct = SelectedObject.GetComponent<Product>();
-      selectedObjLastStartPos = selectedProduct.startCellPos.position;
-      EventManager.SelectedObjectChanged(selectedProduct.productData);
+     // selectedProduct = SelectedObject.GetComponent<Product>();
+      
+      
       if (SelectedObject.tag == "Movable")
       {
+         selectedBuilding = selectedObject.GetComponent<Building>();
+         EventManager.SelectedObjectChanged(selectedBuilding.productData);
+         selectedObjLastStartPos = selectedBuilding.startCellPos.position;
          offset = SelectedObject.transform.position - GetMouseWorldPosition();
       }
    }

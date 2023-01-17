@@ -1,71 +1,67 @@
 %YAML 1.1
 %TAG !u! tag:unity3d.com,2011:
---- !u!1001 &3875973242750102511
+--- !u!1001 &8317865233753797154
 PrefabInstance:
   m_ObjectHideFlags: 0
   serializedVersion: 2
   m_Modification:
     m_TransformParent: {fileID: 0}
     m_Modifications:
+    - target: {fileID: 2094778002156652930, guid: 5df759e0c8b38254f9c2a522a00e95e1, type: 3}
+      propertyPath: productData
+      value: 
+      objectReference: {fileID: 11400000, guid: f630f404de405b440b154c74e314dbb5, type: 2}
     - target: {fileID: 4115374818931275011, guid: 5df759e0c8b38254f9c2a522a00e95e1, type: 3}
       propertyPath: m_LocalPosition.x
-      value: -1.23
+      value: -1.664
       objectReference: {fileID: 0}
     - target: {fileID: 4115374818931275011, guid: 5df759e0c8b38254f9c2a522a00e95e1, type: 3}
       propertyPath: m_LocalPosition.y
-      value: -1.602
+      value: -1.522
       objectReference: {fileID: 0}
     - target: {fileID: 5998832196596861249, guid: 5df759e0c8b38254f9c2a522a00e95e1, type: 3}
       propertyPath: m_Name
-      value: PowePlant
+      value: Tavern
       objectReference: {fileID: 0}
     - target: {fileID: 5998832196596861250, guid: 5df759e0c8b38254f9c2a522a00e95e1, type: 3}
       propertyPath: m_Size.x
-      value: 1.2433106
+      value: 1.5976821
       objectReference: {fileID: 0}
     - target: {fileID: 5998832196596861250, guid: 5df759e0c8b38254f9c2a522a00e95e1, type: 3}
       propertyPath: m_Size.y
-      value: 1.6036861
+      value: 1.6082726
       objectReference: {fileID: 0}
     - target: {fileID: 5998832196596861250, guid: 5df759e0c8b38254f9c2a522a00e95e1, type: 3}
       propertyPath: m_Offset.x
-      value: -0.70737463
+      value: -1.0023112
       objectReference: {fileID: 0}
     - target: {fileID: 5998832196596861250, guid: 5df759e0c8b38254f9c2a522a00e95e1, type: 3}
       propertyPath: m_Offset.y
-      value: -0.9070791
-      objectReference: {fileID: 0}
-    - target: {fileID: 5998832196596861250, guid: 5df759e0c8b38254f9c2a522a00e95e1, type: 3}
-      propertyPath: m_SpriteTilingProperty.pivot.x
-      value: 1
-      objectReference: {fileID: 0}
-    - target: {fileID: 5998832196596861250, guid: 5df759e0c8b38254f9c2a522a00e95e1, type: 3}
-      propertyPath: m_SpriteTilingProperty.pivot.y
-      value: 1
+      value: -0.9064102
       objectReference: {fileID: 0}
     - target: {fileID: 5998832196596861250, guid: 5df759e0c8b38254f9c2a522a00e95e1, type: 3}
       propertyPath: m_SpriteTilingProperty.oldSize.x
-      value: 1.4227272
+      value: 2.0275
       objectReference: {fileID: 0}
     - target: {fileID: 5998832196596861250, guid: 5df759e0c8b38254f9c2a522a00e95e1, type: 3}
       propertyPath: m_SpriteTilingProperty.oldSize.y
-      value: 1.7068182
+      value: 1.72
       objectReference: {fileID: 0}
     - target: {fileID: 5998832196596861251, guid: 5df759e0c8b38254f9c2a522a00e95e1, type: 3}
       propertyPath: m_Sprite
       value: 
-      objectReference: {fileID: 21300000, guid: 4ca85dd5b5020704e9be50e1ba668b39, type: 3}
+      objectReference: {fileID: 21300000, guid: 1517bacd8c24621408d67e0c89cc9e1b, type: 3}
     - target: {fileID: 5998832196596861260, guid: 5df759e0c8b38254f9c2a522a00e95e1, type: 3}
       propertyPath: m_RootOrder
       value: 0
       objectReference: {fileID: 0}
     - target: {fileID: 5998832196596861260, guid: 5df759e0c8b38254f9c2a522a00e95e1, type: 3}
       propertyPath: m_LocalPosition.x
-      value: -1.535
+      value: 1.809
       objectReference: {fileID: 0}
     - target: {fileID: 5998832196596861260, guid: 5df759e0c8b38254f9c2a522a00e95e1, type: 3}
       propertyPath: m_LocalPosition.y
-      value: 5.539
+      value: 4.904
       objectReference: {fileID: 0}
     - target: {fileID: 5998832196596861260, guid: 5df759e0c8b38254f9c2a522a00e95e1, type: 3}
       propertyPath: m_LocalPosition.z

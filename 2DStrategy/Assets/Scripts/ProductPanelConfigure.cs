@@ -14,14 +14,17 @@ public class ProductPanelConfigure : MonoBehaviour
    private Timer timer;
    [SerializeField] private Image image;
    [SerializeField] private TextMeshProUGUI text;
-
-   [SerializeField] private Transform newProductSpawnPosition;
    private void Start()
    { 
        timer = GetComponent<Timer>();
        
        ConfigureProductPanel();
    }
+
+   /*private void OnValidate()
+   {
+       gameObject.name = productData.ProductName + "_Panel";
+   }*/
 
    private void ConfigureProductPanel()
    {
@@ -40,7 +43,11 @@ public class ProductPanelConfigure : MonoBehaviour
        GameObject NewProduct = ObjectPool.Instance.GetFromPool(productData.ProductName);
        EventManager.ProductPanelSpawnedObject(NewProduct);
        NewProduct.transform.position = BuildingSystem.Instance.newProductSpawnPosition.position;
-       BuildingSystem.Instance.TakeArea(NewProduct.GetComponent<Product>().startCellPos.position,productData.ProductSize);
+       if (TryGetComponent(out Building building))
+       {
+           BuildingSystem.Instance.TakeArea(building.startCellPos.position,productData.ProductSize);
+       }
+      
        NewProduct.gameObject.SetActive(true);
    }
    

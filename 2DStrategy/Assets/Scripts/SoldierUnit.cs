@@ -15,6 +15,7 @@ public class SoldierUnit : Product
     private List<Animator> animatorList = new List<Animator>();
    // public LineRenderer linePath;
     private bool isTurnedLeft=true;
+    private Coroutine followWayCoroutine;
 
     private void Start()
     {
@@ -31,6 +32,9 @@ public class SoldierUnit : Product
 
     public void GoPath(Vector3 TargetPosition)
     {
+        
+        if (followWayCoroutine != null)
+            StopCoroutine(followWayCoroutine); 
         TargetPosition.z = 0;
         
         if (TargetPosition.x > transform.position.x && isTurnedLeft) { TurnRight();}
@@ -46,7 +50,10 @@ public class SoldierUnit : Product
         }*/
 
         if (wayPoints != null)
-            StartCoroutine(CO_FollowWayPoints());
+        {
+            followWayCoroutine=  StartCoroutine(CO_FollowWayPoints());
+        }
+            
 
     }
 

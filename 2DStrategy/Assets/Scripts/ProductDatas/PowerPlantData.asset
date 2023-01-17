@@ -14,10 +14,9 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   ProductName: POWER PLANT
   ProductSize: {x: 4, y: 5, z: 1}
-  ProductSprite: {fileID: 21300000, guid: 021907f227a049e40b4234e459451efd, type: 3}
+  ProductSprite: {fileID: 21300000, guid: 4ca85dd5b5020704e9be50e1ba668b39, type: 3}
   ProductPanelWaitTimeSec: 0
   ProductPanelWaitTimeMin: 1
-  ProducedThings:
-  - {fileID: 0}
+  ProducedThings: []
   ProduceTimeMin: 0
   ProduceTimeSec: 0

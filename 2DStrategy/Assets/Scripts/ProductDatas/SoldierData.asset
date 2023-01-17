@@ -13,9 +13,10 @@ MonoBehaviour:
   m_Name: SoldierData
   m_EditorClassIdentifier: 
   ProductName: SOLDIER UNIT
-  ProductSize: {x: 0, y: 0}
+  ProductSize: {x: 0, y: 0, z: 0}
   ProductSprite: {fileID: 21300290, guid: 15b2d2faaecad4bfb9edc6585d94f509, type: 3}
   ProductPanelWaitTimeSec: 30
   ProductPanelWaitTimeMin: 0
   ProducedThings: []
-  ProduceTime: 0
+  ProduceTimeMin: 0
+  ProduceTimeSec: 0

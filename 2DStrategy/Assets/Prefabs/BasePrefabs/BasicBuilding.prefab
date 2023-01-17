@@ -42,7 +42,7 @@ GameObject:
   - component: {fileID: 5998832196596861251}
   - component: {fileID: 5998832196596861261}
   - component: {fileID: 5998832196596861250}
-  - component: {fileID: 5998832196596861248}
+  - component: {fileID: 2094778002156652930}
   m_Layer: 0
   m_Name: BasicBuilding
   m_TagString: Movable
@@ -163,7 +163,7 @@ BoxCollider2D:
   serializedVersion: 2
   m_Size: {x: 1.301311, y: 1.0082273}
   m_EdgeRadius: 0
---- !u!114 &5998832196596861248
+--- !u!114 &2094778002156652930
 MonoBehaviour:
   m_ObjectHideFlags: 0
   m_CorrespondingSourceObject: {fileID: 0}
@@ -172,9 +172,9 @@ MonoBehaviour:
   m_GameObject: {fileID: 5998832196596861249}
   m_Enabled: 1
   m_EditorHideFlags: 0
-  m_Script: {fileID: 11500000, guid: aed29c4a09838524a88b6b1e8ed4e4d6, type: 3}
+  m_Script: {fileID: 11500000, guid: 9ca813ec233d7c74e92759f4ba569959, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  productData: {fileID: 11400000, guid: e466f58876a060741b9cdc7ae395cd5b, type: 2}
+  productData: {fileID: 11400000, guid: a0e15c415bb7e7c498ca1c316da17318, type: 2}
   startCellPos: {fileID: 4115374818931275011}
   _spriteRenderer: {fileID: 5998832196596861251}
