@@ -21,7 +21,7 @@ PrefabInstance:
       objectReference: {fileID: 0}
     - target: {fileID: 5998832196596861249, guid: 5df759e0c8b38254f9c2a522a00e95e1, type: 3}
       propertyPath: m_Name
-      value: Tavern
+      value: Tavern Variant
       objectReference: {fileID: 0}
     - target: {fileID: 5998832196596861250, guid: 5df759e0c8b38254f9c2a522a00e95e1, type: 3}
       propertyPath: m_Size.x
@@ -51,6 +51,10 @@ PrefabInstance:
       propertyPath: m_Sprite
       value: 
       objectReference: {fileID: 21300000, guid: 1517bacd8c24621408d67e0c89cc9e1b, type: 3}
+    - target: {fileID: 5998832196596861251, guid: 5df759e0c8b38254f9c2a522a00e95e1, type: 3}
+      propertyPath: m_SortingOrder
+      value: 1
+      objectReference: {fileID: 0}
     - target: {fileID: 5998832196596861260, guid: 5df759e0c8b38254f9c2a522a00e95e1, type: 3}
       propertyPath: m_RootOrder
       value: 0

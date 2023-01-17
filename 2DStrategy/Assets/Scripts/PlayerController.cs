@@ -10,9 +10,11 @@ public class PlayerController : MonoBehaviour
    private Vector3 selectedObjLastPos;
    private Vector3 selectedObjLastStartPos;
    private Building selectedBuilding;
+   private SpriteRenderer selectedObjSpriteRenderer;
    private Vector3 offset;
    private Camera _camera;
    private BuildingSystem _buildingSystem;
+   
 
    private void Start()
    {
@@ -78,6 +80,11 @@ public class PlayerController : MonoBehaviour
 
    public void UnSelectObject()
    {
+      if (SelectedObject&&SelectedObject.CompareTag("Movable"))
+      {
+         selectedObjSpriteRenderer.sortingOrder = 1;
+         selectedObjSpriteRenderer = null;
+      }
       SelectedObject = null;
      // selectedProduct = null;
       selectedObjLastPos = Vector3.zero;
@@ -88,10 +95,12 @@ public class PlayerController : MonoBehaviour
    {
       SelectedObject = selectedObject;
       selectedObjLastPos = SelectedObject.transform.position;
-     // selectedProduct = SelectedObject.GetComponent<Product>();
+      // selectedProduct = SelectedObject.GetComponent<Product>();
      
       if (SelectedObject.CompareTag("Movable"))
       {
+         selectedObjSpriteRenderer = selectedObject.GetComponent<SpriteRenderer>();
+         selectedObjSpriteRenderer.sortingOrder = 5;
          selectedBuilding = selectedObject.GetComponent<Building>();
          EventManager.SelectedObjectChanged(selectedBuilding.productData);
          selectedObjLastStartPos = selectedBuilding.startCellPos.position;

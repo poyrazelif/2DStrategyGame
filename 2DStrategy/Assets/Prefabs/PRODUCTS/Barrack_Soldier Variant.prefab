@@ -61,12 +61,16 @@ PrefabInstance:
       objectReference: {fileID: 0}
     - target: {fileID: 2444141826337120796, guid: 8fb085f2c945fa64cb8d41b3c8358943, type: 3}
       propertyPath: m_Name
-      value: Barrack_Soldier
+      value: Barrack_Soldier Variant
       objectReference: {fileID: 0}
     - target: {fileID: 2444141826337120798, guid: 8fb085f2c945fa64cb8d41b3c8358943, type: 3}
       propertyPath: m_Sprite
       value: 
       objectReference: {fileID: 21300000, guid: f5998e4e153d9274999360612136c143, type: 3}
+    - target: {fileID: 2444141826337120798, guid: 8fb085f2c945fa64cb8d41b3c8358943, type: 3}
+      propertyPath: m_SortingOrder
+      value: 1
+      objectReference: {fileID: 0}
     - target: {fileID: 2444141826337120799, guid: 8fb085f2c945fa64cb8d41b3c8358943, type: 3}
       propertyPath: m_SpriteTilingProperty.oldSize.x
       value: 1.5795455
