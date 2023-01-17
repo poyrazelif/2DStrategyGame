@@ -13,11 +13,11 @@ MonoBehaviour:
   m_Name: BarrackData
   m_EditorClassIdentifier: 
   ProductName: Barrack
-  ProductSize: {x: 4, y: 3, z: 1}
+  ProductSize: {x: 4, y: 4, z: 1}
   ProductSprite: {fileID: 21300000, guid: 21e65559107eeb14590b601e0e668ee5, type: 3}
-  ProductPanelWaitTimeSec: 5
+  ProductPanelWaitTimeSec: 0
   ProductPanelWaitTimeMin: 0
   ProducedThings:
-  - {fileID: 11400000, guid: 11d2bb44e1f2dca42b5feb981e2af686, type: 2}
+  - {fileID: 11400000, guid: 5626384adf5f8ae4dab6399d6a46b107, type: 2}
   ProduceTimeMin: 0
-  ProduceTimeSec: 10
+  ProduceTimeSec: 59

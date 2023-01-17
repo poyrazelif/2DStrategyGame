@@ -3,13 +3,52 @@
   <component name="ChangeListManager">
     <list default="true" id="fa576b04-f557-4af3-8252-7163cf1cfb7c" name="Changes" comment="">
       <change beforePath="$PROJECT_DIR$/.idea/.idea.2DStrategy/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/.idea.2DStrategy/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/Assets/Prefabs/Buildings/Barrack Variant.prefab" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/Prefabs/Buildings/Barrack Variant.prefab" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/Prefabs/Buildings/ProductiveBuilding.prefab" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/Prefabs/Buildings/ProductiveBuilding.prefab.meta" beforeDir="false" />
       <change beforePath="$PROJECT_DIR$/Assets/Scenes/SampleScene.unity" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/Scenes/SampleScene.unity" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/Assets/Scripts/BuildingSystem.cs" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/Scripts/BuildingSystem.cs" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/Assets/Scripts/PlayerController.cs" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/Scripts/PlayerController.cs" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/Assets/Scripts/ProductDatas/BarrackData.asset" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/Scripts/ProductDatas/BarrackData.asset" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/Assets/Scripts/ProductPanelConfigure.cs" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/Scripts/ProductPanelConfigure.cs" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/Assets/Sprites/Buildings/barrack1.png.meta" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/Sprites/Buildings/barrack1.png.meta" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/Scripts/ProductDatas/PowerPlantData.asset" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/Scripts/ProductDatas/PowerPlantData.asset" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/Scripts/ProductiveProduct.cs" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/Scripts/ProductiveProduct.cs" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/Scripts/SoldierUnit.cs" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/Scripts/SoldierUnit.cs" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/Sprites/Buildings.meta" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/Sprites/Buildings/barrack1.png" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/Sprites/Buildings/barrack1.png.meta" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/Sprites/Buildings/plant-house.png" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/Sprites/Buildings/plant-house.png.meta" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/Sprites/Buildings/powerplant1.png" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/Sprites/Buildings/powerplant1.png.meta" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/Sprites/Buildings/rock-1.png" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/Sprites/Buildings/rock-1.png.meta" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/Sprites/Buildings/rock-2.png" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/Sprites/Buildings/rock-2.png.meta" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/Sprites/Buildings/tree-house.png" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/Sprites/Buildings/tree-house.png.meta" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/Sprites/SpriteAtlas.spriteatlas" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/Sprites/SpriteAtlas.spriteatlas" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/Tile Palette.prefab" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/Tile Palette.prefab.meta" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/box_slider.png" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/box_slider.png.meta" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/coin.png" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/coin.png.meta" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/g8840.png" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/g8840.png.meta" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/panel_02.png" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/panel_02.png.meta" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/panel_06.png" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/panel_06.png.meta" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/panel_element_04.png" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/panel_element_04.png.meta" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/panel_element_25.png" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/panel_element_25.png.meta" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/panel_element_26.png" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/panel_element_26.png.meta" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/panel_element_45.png" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/panel_element_45.png.meta" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/square-xxl.asset" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/square-xxl.asset.meta" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/square-xxl.png" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/square-xxl.png.meta" beforeDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -99,7 +138,7 @@
       <option name="presentableId" value="Default" />
       <updated>1673540974746</updated>
       <workItem from="1673540976698" duration="73880000" />
-      <workItem from="1673927174858" duration="18325000" />
+      <workItem from="1673927174858" duration="22550000" />
     </task>
     <servers />
   </component>

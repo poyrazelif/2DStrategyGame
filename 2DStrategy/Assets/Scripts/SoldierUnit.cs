@@ -39,11 +39,11 @@ public class SoldierUnit : Product
         PlayAnim("Walk");
      
         wayPoints = AStar.FindPathClosest(tilemap, transform.position, TargetPosition);
-        if (wayPoints != null)
+        /*if (wayPoints != null)
         {
             BuildingSystem.Instance.line.positionCount = wayPoints.Count;
             BuildingSystem.Instance.line.SetPositions(wayPoints.ToArray());
-        }
+        }*/
 
         if (wayPoints != null)
             StartCoroutine(CO_FollowWayPoints());
@@ -54,7 +54,7 @@ public class SoldierUnit : Product
     {
         foreach (Vector3 point in wayPoints)
         {
-            float waitTime = Vector3.Distance(point , transform.position)*.3f;
+            float waitTime = Vector3.Distance(point , transform.position)*.5f;
             transform.DOMove(new Vector3(point.x, point.y, 0),  waitTime).SetEase(Ease.Linear);
             yield return new WaitForSeconds(waitTime);
         }

@@ -20,7 +20,19 @@ SpriteAtlas:
       readable: 0
       crunchedCompression: 0
       sRGB: 1
-    platformSettings: []
+    platformSettings:
+    - serializedVersion: 3
+      m_BuildTarget: DefaultTexturePlatform
+      m_MaxTextureSize: 4096
+      m_ResizeAlgorithm: 0
+      m_TextureFormat: -1
+      m_TextureCompression: 1
+      m_CompressionQuality: 50
+      m_CrunchedCompression: 0
+      m_AllowsAlphaSplitting: 0
+      m_Overridden: 0
+      m_AndroidETC2FallbackOverride: 0
+      m_ForceMaximumCompressionQuality_BC6H_BC7: 0
     packingSettings:
       serializedVersion: 2
       padding: 4
@@ -44,17 +56,43 @@ SpriteAtlas:
     - {fileID: 2800000, guid: a9de040de46f589f7873100a0550cdd7, type: 3}
     - {fileID: 2800000, guid: 15b2d2faaecad4bfb9edc6585d94f509, type: 3}
     - {fileID: 2800000, guid: 00131504b74d09cb5a7f6d424c6a59d7, type: 3}
+    - {fileID: 2800000, guid: 3b26fd5e0cfa9234bb163f42f707332b, type: 3}
+    - {fileID: 2800000, guid: bbf25bccee444464596b0e3ea0ad0c85, type: 3}
+    - {fileID: 2800000, guid: 1517bacd8c24621408d67e0c89cc9e1b, type: 3}
+    - {fileID: 2800000, guid: f5998e4e153d9274999360612136c143, type: 3}
+    - {fileID: 2800000, guid: 6188b1a9e501def40a5bcdcf17dfe7f9, type: 3}
+    - {fileID: 2800000, guid: 1f5ef91cf6ee1e04ab868b37afd9fb0e, type: 3}
+    - {fileID: 2800000, guid: 5d0ba4c9f7a8bf14aaba1db81b978fa1, type: 3}
+    - {fileID: 2800000, guid: 99aeea6964006004b9bf0d8ea3f038ab, type: 3}
+    - {fileID: 2800000, guid: 4ca85dd5b5020704e9be50e1ba668b39, type: 3}
+    - {fileID: 2800000, guid: 0bdbdc707108b534583c65a2b978d37c, type: 3}
+    - {fileID: 2800000, guid: 6e028008ba52e1646804a4b17e730c33, type: 3}
+    - {fileID: 2800000, guid: 74f4a8cbf79f4ba4ca39fd7aa616f54e, type: 3}
+    - {fileID: 2800000, guid: 968f2da25f4b47a45ad1b681edbb2ede, type: 3}
+    - {fileID: 2800000, guid: d3b9040e422b4244cbc85961eda88f84, type: 3}
+    - {fileID: 2800000, guid: 3f5fb39403d0b624badffc1f5158c6ed, type: 3}
+    - {fileID: 2800000, guid: 3a80848d6587feb4fa65c21377d7e5d2, type: 3}
+    - {fileID: 2800000, guid: 6516f355d55e29844ac63fa4fb6c5c11, type: 3}
     bindAsDefault: 1
     isAtlasV2: 0
     cachedData: {fileID: 0}
   m_MasterAtlas: {fileID: 0}
   m_PackedSprites:
+  - {fileID: 21300000, guid: 0bdbdc707108b534583c65a2b978d37c, type: 3}
   - {fileID: 21300000, guid: 5018cb8231e21160db165deace3b124c, type: 3}
+  - {fileID: 21300000, guid: 968f2da25f4b47a45ad1b681edbb2ede, type: 3}
   - {fileID: 21300000, guid: 021907f227a049e40b4234e459451efd, type: 3}
   - {fileID: 21300000, guid: 00131504b74d09cb5a7f6d424c6a59d7, type: 3}
+  - {fileID: 21300000, guid: 3f5fb39403d0b624badffc1f5158c6ed, type: 3}
+  - {fileID: 21300000, guid: 6516f355d55e29844ac63fa4fb6c5c11, type: 3}
+  - {fileID: 21300000, guid: 4ca85dd5b5020704e9be50e1ba668b39, type: 3}
   - {fileID: 21300000, guid: a9ce4af7a31a706ac9dd9db2a51850a0, type: 3}
+  - {fileID: 21300000, guid: 6e028008ba52e1646804a4b17e730c33, type: 3}
   - {fileID: 21300000, guid: 21e65559107eeb14590b601e0e668ee5, type: 3}
+  - {fileID: 21300000, guid: 99aeea6964006004b9bf0d8ea3f038ab, type: 3}
   - {fileID: 21300000, guid: 325f4579683eff24c81eb687b0e80a33, type: 3}
+  - {fileID: 21300000, guid: 6188b1a9e501def40a5bcdcf17dfe7f9, type: 3}
+  - {fileID: 21300000, guid: 5d0ba4c9f7a8bf14aaba1db81b978fa1, type: 3}
   - {fileID: 21300000, guid: edc6e9e9eec481e42aa40656291effbe, type: 3}
   - {fileID: 21300266, guid: 15b2d2faaecad4bfb9edc6585d94f509, type: 3}
   - {fileID: 21300260, guid: 15b2d2faaecad4bfb9edc6585d94f509, type: 3}
@@ -209,15 +247,32 @@ SpriteAtlas:
   - {fileID: 21300000, guid: 09769f0b7b7faf74999bef4e6ca48d16, type: 3}
   - {fileID: 21300000, guid: 7414584b0a86c8e8b8bc27d172de10dc, type: 3}
   - {fileID: 21300000, guid: 10aed0bb942816e4aa62c522dee1b4f9, type: 3}
+  - {fileID: 21300000, guid: 74f4a8cbf79f4ba4ca39fd7aa616f54e, type: 3}
+  - {fileID: 21300000, guid: 1f5ef91cf6ee1e04ab868b37afd9fb0e, type: 3}
+  - {fileID: 21300000, guid: bbf25bccee444464596b0e3ea0ad0c85, type: 3}
   - {fileID: 21300000, guid: a9de040de46f589f7873100a0550cdd7, type: 3}
+  - {fileID: 21300000, guid: 3a80848d6587feb4fa65c21377d7e5d2, type: 3}
+  - {fileID: 21300000, guid: 1517bacd8c24621408d67e0c89cc9e1b, type: 3}
+  - {fileID: 21300000, guid: d3b9040e422b4244cbc85961eda88f84, type: 3}
+  - {fileID: 21300000, guid: f5998e4e153d9274999360612136c143, type: 3}
+  - {fileID: 21300000, guid: 3b26fd5e0cfa9234bb163f42f707332b, type: 3}
   - {fileID: 21300000, guid: da815d2f6d670394ca40b78eafc77af2, type: 3}
   m_PackedSpriteNamesToIndex:
+  - b12_barrack_knight
   - g8840
+  - stones_5
   - powerplant1
   - panel_element_25
+  - stones_7
+  - tree_2
+  - b11_PowerPlant
   - panel_02
+  - greenery_2
   - barrack1
+  - b10_church
   - plant-house
+  - b6_bakery
+  - b9_foodStorage
   - 05204083667fe58cdee9b37968b37623
   - dagger
   - merchant-body-white
@@ -372,7 +427,15 @@ SpriteAtlas:
   - tree-house
   - panel_element_26
   - rock-2
+  - stones_4
+  - b8_tower
+  - b2_tent
   - box_slider
+  - tree_1
+  - b3_tavern
+  - stones_6
+  - b5_barrack_soldier
+  - b1_warehouse
   - rock-1
   m_RenderDataMap: {}
   m_Tag: SpriteAtlas

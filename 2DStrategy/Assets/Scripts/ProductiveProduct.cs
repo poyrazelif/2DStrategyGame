@@ -5,7 +5,6 @@ using UnityEngine;
 
 public class ProductiveProduct :Product
 {
-  public bool isPlaced=false;
   [SerializeField] private Transform SpawnPosition;
   private Timer timer;
   private void Start()

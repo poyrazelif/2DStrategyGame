@@ -1,0 +1,87 @@
+%YAML 1.1
+%TAG !u! tag:unity3d.com,2011:
+--- !u!1001 &2687797250668275457
+PrefabInstance:
+  m_ObjectHideFlags: 0
+  serializedVersion: 2
+  m_Modification:
+    m_TransformParent: {fileID: 0}
+    m_Modifications:
+    - target: {fileID: 9426990, guid: 8fb085f2c945fa64cb8d41b3c8358943, type: 3}
+      propertyPath: m_AnchoredPosition.x
+      value: -0.816
+      objectReference: {fileID: 0}
+    - target: {fileID: 9426990, guid: 8fb085f2c945fa64cb8d41b3c8358943, type: 3}
+      propertyPath: m_AnchoredPosition.y
+      value: -1.496
+      objectReference: {fileID: 0}
+    - target: {fileID: 2444141826337120785, guid: 8fb085f2c945fa64cb8d41b3c8358943, type: 3}
+      propertyPath: m_RootOrder
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 2444141826337120785, guid: 8fb085f2c945fa64cb8d41b3c8358943, type: 3}
+      propertyPath: m_LocalPosition.x
+      value: -1.638
+      objectReference: {fileID: 0}
+    - target: {fileID: 2444141826337120785, guid: 8fb085f2c945fa64cb8d41b3c8358943, type: 3}
+      propertyPath: m_LocalPosition.y
+      value: 4.812
+      objectReference: {fileID: 0}
+    - target: {fileID: 2444141826337120785, guid: 8fb085f2c945fa64cb8d41b3c8358943, type: 3}
+      propertyPath: m_LocalPosition.z
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 2444141826337120785, guid: 8fb085f2c945fa64cb8d41b3c8358943, type: 3}
+      propertyPath: m_LocalRotation.w
+      value: 1
+      objectReference: {fileID: 0}
+    - target: {fileID: 2444141826337120785, guid: 8fb085f2c945fa64cb8d41b3c8358943, type: 3}
+      propertyPath: m_LocalRotation.x
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 2444141826337120785, guid: 8fb085f2c945fa64cb8d41b3c8358943, type: 3}
+      propertyPath: m_LocalRotation.y
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 2444141826337120785, guid: 8fb085f2c945fa64cb8d41b3c8358943, type: 3}
+      propertyPath: m_LocalRotation.z
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 2444141826337120785, guid: 8fb085f2c945fa64cb8d41b3c8358943, type: 3}
+      propertyPath: m_LocalEulerAnglesHint.x
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 2444141826337120785, guid: 8fb085f2c945fa64cb8d41b3c8358943, type: 3}
+      propertyPath: m_LocalEulerAnglesHint.y
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 2444141826337120785, guid: 8fb085f2c945fa64cb8d41b3c8358943, type: 3}
+      propertyPath: m_LocalEulerAnglesHint.z
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 2444141826337120796, guid: 8fb085f2c945fa64cb8d41b3c8358943, type: 3}
+      propertyPath: m_Name
+      value: Barrack_Soldier
+      objectReference: {fileID: 0}
+    - target: {fileID: 2444141826337120798, guid: 8fb085f2c945fa64cb8d41b3c8358943, type: 3}
+      propertyPath: m_Sprite
+      value: 
+      objectReference: {fileID: 21300000, guid: f5998e4e153d9274999360612136c143, type: 3}
+    - target: {fileID: 2444141826337120799, guid: 8fb085f2c945fa64cb8d41b3c8358943, type: 3}
+      propertyPath: m_SpriteTilingProperty.oldSize.x
+      value: 1.5795455
+      objectReference: {fileID: 0}
+    - target: {fileID: 2444141826337120799, guid: 8fb085f2c945fa64cb8d41b3c8358943, type: 3}
+      propertyPath: m_SpriteTilingProperty.oldSize.y
+      value: 1.3590909
+      objectReference: {fileID: 0}
+    - target: {fileID: 5456053245369048670, guid: 8fb085f2c945fa64cb8d41b3c8358943, type: 3}
+      propertyPath: m_LocalPosition.x
+      value: -1.429
+      objectReference: {fileID: 0}
+    - target: {fileID: 5456053245369048670, guid: 8fb085f2c945fa64cb8d41b3c8358943, type: 3}
+      propertyPath: m_LocalPosition.y
+      value: -1.341
+      objectReference: {fileID: 0}
+    m_RemovedComponents: []
+  m_SourcePrefab: {fileID: 100100000, guid: 8fb085f2c945fa64cb8d41b3c8358943, type: 3}

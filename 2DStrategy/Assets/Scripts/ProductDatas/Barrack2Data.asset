@@ -10,14 +10,14 @@ MonoBehaviour:
   m_Enabled: 1
   m_EditorHideFlags: 0
   m_Script: {fileID: 11500000, guid: 54a19d7d40ab1fc43b5ced161e6a57e1, type: 3}
-  m_Name: PowerPlantData
+  m_Name: Barrack2Data
   m_EditorClassIdentifier: 
-  ProductName: POWER PLANT
-  ProductSize: {x: 4, y: 5, z: 1}
-  ProductSprite: {fileID: 21300000, guid: 021907f227a049e40b4234e459451efd, type: 3}
-  ProductPanelWaitTimeSec: 0
+  ProductName: Barrack
+  ProductSize: {x: 5, y: 2, z: 1}
+  ProductSprite: {fileID: 21300000, guid: 0bdbdc707108b534583c65a2b978d37c, type: 3}
+  ProductPanelWaitTimeSec: 10
   ProductPanelWaitTimeMin: 1
   ProducedThings:
-  - {fileID: 0}
-  ProduceTimeMin: 0
+  - {fileID: 11400000, guid: 11d2bb44e1f2dca42b5feb981e2af686, type: 2}
+  ProduceTimeMin: 2
   ProduceTimeSec: 0

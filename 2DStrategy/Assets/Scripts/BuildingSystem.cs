@@ -11,7 +11,7 @@ public class BuildingSystem : Singleton<BuildingSystem>
    [SerializeField]private Tilemap tilemap;
    [SerializeField] private TileBase colorTile;
    public Transform newProductSpawnPosition;
-   public LineRenderer line;
+   //public LineRenderer line;
    public Tilemap Tilemap
    {
       get { return tilemap; }
