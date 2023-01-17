@@ -19,7 +19,7 @@ public class ProductData : ScriptableObject
 {
    public string ProductName;
 
-   public Vector2 ProductSize;
+   public Vector3Int ProductSize;
 
    public Sprite ProductSprite;
 

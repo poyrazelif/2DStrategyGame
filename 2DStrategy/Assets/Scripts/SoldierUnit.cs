@@ -31,7 +31,7 @@ public class SoldierUnit : Product
 
     public void GoPath(Vector3 TargetPosition)
     {
-        TargetPosition.z = -1;
+        TargetPosition.z = 0;
         
         if (TargetPosition.x > transform.position.x && isTurnedLeft) { TurnRight();}
         else if(TargetPosition.x<=transform.position.x && !isTurnedLeft){ TurnLeft();}
@@ -39,20 +39,27 @@ public class SoldierUnit : Product
         PlayAnim("Walk");
      
         wayPoints = AStar.FindPathClosest(tilemap, transform.position, TargetPosition);
-        /*if (wayPoints != null)
+        if (wayPoints != null)
         {
-            linePath.positionCount = wayPoints.Count;
-            linePath.SetPositions(wayPoints.ToArray());
-        }*/
-
-        foreach (Vector3 point in wayPoints)
-        {
-            transform.DOMove(new Vector3(point.x,point.y,-1), 2f).SetEase(Ease.Linear).OnComplete(() =>
-            {
-                PlayAnim("Idle");
-            });
+            BuildingSystem.Instance.line.positionCount = wayPoints.Count;
+            BuildingSystem.Instance.line.SetPositions(wayPoints.ToArray());
         }
 
+        if (wayPoints != null)
+            StartCoroutine(CO_FollowWayPoints());
+
+    }
+
+    IEnumerator CO_FollowWayPoints()
+    {
+        foreach (Vector3 point in wayPoints)
+        {
+            float waitTime = Vector3.Distance(point , transform.position)*.3f;
+            transform.DOMove(new Vector3(point.x, point.y, 0),  waitTime).SetEase(Ease.Linear);
+            yield return new WaitForSeconds(waitTime);
+        }
+        
+        PlayAnim("Idle");
     }
 
     public void PlayAnim(string name)

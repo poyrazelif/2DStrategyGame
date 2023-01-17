@@ -14,6 +14,8 @@ public class ProductPanelConfigure : MonoBehaviour
    private Timer timer;
    [SerializeField] private Image image;
    [SerializeField] private TextMeshProUGUI text;
+
+   [SerializeField] private Transform newProductSpawnPosition;
    private void Start()
    { 
        timer = GetComponent<Timer>();
@@ -32,4 +34,14 @@ public class ProductPanelConfigure : MonoBehaviour
       text.text = productData.ProductName;
 
    }
+
+   public void SpawnProduct()
+   {
+       GameObject NewProduct = ObjectPool.Instance.GetFromPool(productData.ProductName);
+       EventManager.ProductPanelSpawnedObject(NewProduct);
+       NewProduct.transform.position = BuildingSystem.Instance.newProductSpawnPosition.position;
+       NewProduct.gameObject.SetActive(true);
+   }
+   
+   
 }

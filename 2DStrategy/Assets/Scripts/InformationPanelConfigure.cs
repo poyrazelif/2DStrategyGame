@@ -17,6 +17,13 @@ public class InformationPanelConfigure : MonoBehaviour
     private void Start()
     {
         EventManager.onSelectedObjChanged += ConfigurePanel;
+        //EventManager.onProductPanelSpawnedObj += ConfigurePanel;
+
+    }
+
+    public void ConfigurePanel(GameObject gameObject)
+    {
+        ConfigurePanel(gameObject.GetComponent<Product>().productData);
     }
 
     public void ConfigurePanel(ProductData productData)
@@ -40,7 +47,6 @@ public class InformationPanelConfigure : MonoBehaviour
             ProducePanel.SetActive(true);
             }
         }
-
     }
 
     public void ClearProducePanels()
@@ -51,4 +57,5 @@ public class InformationPanelConfigure : MonoBehaviour
         }
         ListedProducePanels.Clear();
     }
+
 }
