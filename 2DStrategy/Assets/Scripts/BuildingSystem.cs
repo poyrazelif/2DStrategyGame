@@ -5,17 +5,15 @@ using UnityEngine;
 using UnityEngine.Tilemaps;
 
 public class BuildingSystem : Singleton<BuildingSystem>
-{
-   public GridLayout GridLayout;
-   private Grid grid;
-   [SerializeField]private Tilemap tilemap;
+{ 
+   [SerializeField] private Tilemap tilemap;
    [SerializeField] private TileBase colorTile;
+   private Grid grid;
+     
+   public GridLayout GridLayout;
    public Transform newProductSpawnPosition;
-   //public LineRenderer line;
-   public Tilemap Tilemap
-   {
-      get { return tilemap; }
-   }
+   public LineRenderer line;
+   public Tilemap Tilemap { get { return tilemap; } }
 
    private void Awake()
    {
@@ -39,7 +37,6 @@ public class BuildingSystem : Singleton<BuildingSystem>
          Vector3Int pos = new Vector3Int(p.x, p.y, 0);
          array[count] = tilemap.GetTile(pos);
          count++;
-
       }
       return array; 
    }
@@ -60,7 +57,6 @@ public class BuildingSystem : Singleton<BuildingSystem>
             return false;
          }
       }
-
       return true;
    }
 

@@ -3,54 +3,27 @@
   <component name="ChangeListManager">
     <list default="true" id="fa576b04-f557-4af3-8252-7163cf1cfb7c" name="Changes" comment="">
       <change beforePath="$PROJECT_DIR$/.idea/.idea.2DStrategy/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/.idea.2DStrategy/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/Assets/Prefabs/Buildings.meta" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/Assets/Prefabs/Buildings/Barrack Variant.prefab" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/Assets/Prefabs/Buildings/Barrack Variant.prefab.meta" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/Assets/Prefabs/Buildings/BaseBuildings.meta" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/Assets/Prefabs/Buildings/BaseBuildings/BasicBuilding.prefab" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/Assets/Prefabs/Buildings/BaseBuildings/BasicBuilding.prefab.meta" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/Assets/Prefabs/Buildings/BaseBuildings/ProductiveBuilding.prefab" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/Assets/Prefabs/Buildings/BaseBuildings/ProductiveBuilding.prefab.meta" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/Assets/Prefabs/Buildings/Decor_Rock1 Variant.prefab" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/Assets/Prefabs/Buildings/Decor_Rock1 Variant.prefab.meta" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/Assets/Prefabs/Buildings/Decor_Rock2 Variant.prefab" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/Assets/Prefabs/Buildings/Decor_Rock2 Variant.prefab.meta" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/Assets/Prefabs/Buildings/House_Tree Variant.prefab" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/Assets/Prefabs/Buildings/House_Tree Variant.prefab.meta" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/Assets/Prefabs/Buildings/New.meta" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/Assets/Prefabs/Buildings/New/Barrack_Knight Variant.prefab" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/Assets/Prefabs/Buildings/New/Barrack_Knight Variant.prefab.meta" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/Assets/Prefabs/Buildings/New/Barrack_Soldier Variant.prefab" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/Assets/Prefabs/Buildings/New/Barrack_Soldier Variant.prefab.meta" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/Assets/Prefabs/Buildings/New/PowePlant Variant.prefab" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/Assets/Prefabs/Buildings/New/PowePlant Variant.prefab.meta" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/Assets/Prefabs/Buildings/Power Plant Variant.prefab" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/Assets/Prefabs/Buildings/Power Plant Variant.prefab.meta" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/Assets/Prefabs/Knight.prefab" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/Assets/Prefabs/Knight.prefab.meta" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/Assets/Prefabs/KnightUnit.prefab" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/Assets/Prefabs/KnightUnit.prefab.meta" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/Assets/Prefabs/Soldier.prefab" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/Assets/Prefabs/Soldier.prefab.meta" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/Assets/Prefabs/SoldierUnit.prefab" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/Assets/Prefabs/SoldierUnit.prefab.meta" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/Assets/Prefabs/UI/Product_Scroll_infinite.prefab" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/Prefabs/UI/Product_Scroll_infinite.prefab" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/Animations/Knight/Knight.controller" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/Animations/Knight/Knight.controller" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/Animations/Soldier/Soldier.controller" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/Animations/Soldier/Soldier.controller" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/Prefabs/PRODUCTS/KnightUnit.prefab" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/Prefabs/PRODUCTS/KnightUnit.prefab" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/Prefabs/PRODUCTS/SoldierUnit.prefab" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/Prefabs/PRODUCTS/SoldierUnit.prefab" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/Prefabs/UI/Product_Example.prefab" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/Prefabs/UI/Product_Example.prefab" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/Assets/Scenes/SampleScene.unity" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/Scenes/SampleScene.unity" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/Assets/Scripts/Building.cs" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/Scripts/Building.cs" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/Assets/Scripts/BuildingSystem.cs" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/Scripts/BuildingSystem.cs" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/Scripts/EventManager.cs" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/Scripts/EventManager.cs" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/Scripts/FindPath.cs" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/Scripts/FindPath.cs" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/Scripts/InfiniteScroll.cs" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/Scripts/InfiniteScroll.cs" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/Scripts/InformationPanelConfigure.cs" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/Scripts/InformationPanelConfigure.cs" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/Scripts/ObjectPool.cs" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/Scripts/ObjectPool.cs" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/Assets/Scripts/PlayerController.cs" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/Scripts/PlayerController.cs" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/Assets/Scripts/Product.cs" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/Scripts/Product.cs" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/Assets/Scripts/ProductDatas/Barrack2Data.asset" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/Scripts/ProductDatas/Barrack2Data.asset" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/Assets/Scripts/ProductDatas/BarrackData.asset" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/Scripts/ProductDatas/BarrackData.asset" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/Assets/Scripts/ProductDatas/PowerPlantData.asset" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/Scripts/ProductDatas/PowerPlantData.asset" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/Assets/Scripts/ProductDatas/SoldierData.asset" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/Scripts/ProductDatas/SoldierData.asset" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/Scripts/ProductData.cs" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/Scripts/ProductData.cs" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/Assets/Scripts/ProductPanelConfigure.cs" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/Scripts/ProductPanelConfigure.cs" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/Assets/Scripts/ProductiveProduct.cs" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/Scripts/ProductiveProduct.cs" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/Scripts/ScrollContent.cs" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/Scripts/ScrollContent.cs" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/Assets/Scripts/SoldierUnit.cs" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/Scripts/SoldierUnit.cs" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/Assets/Sprites/Environment/b10_church.png.meta" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/Sprites/Environment/b10_church.png.meta" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/Assets/Sprites/Environment/b2_tent.png.meta" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/Sprites/Environment/b2_tent.png.meta" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/Assets/Sprites/Environment/b3_tavern.png.meta" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/Sprites/Environment/b3_tavern.png.meta" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/Assets/Sprites/Environment/b8_tower.png.meta" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/Sprites/Environment/b8_tower.png.meta" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/Scripts/Timer.cs" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/Scripts/Timer.cs" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/Sprites/Environment/stones_4.png.meta" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/Sprites/Environment/stones_4.png.meta" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/Sprites/Environment/stones_5.png.meta" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/Sprites/Environment/stones_5.png.meta" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -141,7 +114,7 @@
       <option name="presentableId" value="Default" />
       <updated>1673540974746</updated>
       <workItem from="1673540976698" duration="73880000" />
-      <workItem from="1673927174858" duration="25315000" />
+      <workItem from="1673927174858" duration="36987000" />
     </task>
     <servers />
   </component>
@@ -152,25 +125,6 @@
   <component name="UnityUnitTestConfiguration" currentTestLauncher="EditMode" />
   <component name="VcsManagerConfiguration">
     <option name="CLEAR_INITIAL_COMMIT_MESSAGE" value="true" />
-  </component>
-  <component name="XDebuggerManager">
-    <breakpoint-manager>
-      <breakpoints>
-        <line-breakpoint enabled="true" type="DotNet Breakpoints">
-          <url>file://$PROJECT_DIR$/Assets/Scripts/Timer.cs</url>
-          <line>76</line>
-          <properties documentPath="C:\Users\poyra\Documents\GitHub\2DStrategyGame\2DStrategy\Assets\Scripts\Timer.cs" initialLine="32" containingFunctionPresentation="method 'CO_Wait'">
-            <startOffsets>
-              <option value="1899" />
-            </startOffsets>
-            <endOffsets>
-              <option value="1900" />
-            </endOffsets>
-          </properties>
-          <option name="timeStamp" value="2" />
-        </line-breakpoint>
-      </breakpoints>
-    </breakpoint-manager>
   </component>
   <component name="XSLT-Support.FileAssociations.UIState">
     <expand />

@@ -53,6 +53,18 @@ public class ObjectPool : Singleton<ObjectPool>
                 }
             }
         }
+
+        public void DepositAll()
+        {
+            foreach (PoolObjects pool in objects)
+            {
+                foreach (var poolObject in pool.pooledObjects)
+                {
+                    poolObject.transform.SetParent(transform);
+                    poolObject.SetActive(false);
+                }
+            }
+        }
         private void InitializePool()
         {
             foreach (PoolObjects pool in objects)

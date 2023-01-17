@@ -9,7 +9,7 @@ using UnityEngine.UI;
 public class Timer : MonoBehaviour
 {
    private int second;
-    private int minute;
+   private int minute;
 
    [SerializeField] private TextMeshProUGUI timeText;
    [SerializeField] private TextMeshPro timeTextInGame;
@@ -34,21 +34,20 @@ public class Timer : MonoBehaviour
    IEnumerator CO_Wait(int secondtime)
    {
       if (secondtime <= 0)
-      {
-         yield break;
-      }
+      { yield break; }
 
       TimeStarted.Invoke();
       
       int min= (int) secondtime / 60;
       int sec =  secondtime % 60;
-      if (timeText != null)
+      
+      if (timeText != null) //TextMeshUI
       {
          timeText.gameObject.SetActive(true);
          timeText.text = min.ToString("00") + ":" + sec.ToString("00");
       }
 
-      if (timeTextInGame != null)
+      if (timeTextInGame != null) //TextMesh3D
       {
          timeTextInGame.gameObject.SetActive(true);
          timeTextInGame.text = min.ToString("00") + ":" + sec.ToString("00");
@@ -56,7 +55,6 @@ public class Timer : MonoBehaviour
       
       for(int i=0;i<secondtime;i++)
       {
-        
          if (sec > 0)
          {
             sec--;
@@ -68,7 +66,7 @@ public class Timer : MonoBehaviour
             sec = 59;
             yield return new WaitForSecondsRealtime(1);
          }
-        
+         
          if (timeText != null)
             timeText.text = min.ToString("00") + ":" + sec.ToString("00");
          
@@ -80,12 +78,8 @@ public class Timer : MonoBehaviour
          timeText.gameObject.SetActive(false); 
       
       if (timeTextInGame != null)
-         timeTextInGame.gameObject.SetActive(false); 
-      //ButtonActive
-      
+         timeTextInGame.gameObject.SetActive(false);
+
       TimeFinished.Invoke();
-      /*button.interactable = true;
-      Debug.Log("buttonactive");*/
-            
    }
 }

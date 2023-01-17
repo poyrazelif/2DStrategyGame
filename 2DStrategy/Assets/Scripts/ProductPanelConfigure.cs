@@ -10,10 +10,10 @@ using Image = UnityEngine.UI.Image;
 public class ProductPanelConfigure : MonoBehaviour
 {
    [SerializeField]private ProductData productData;
-
-   private Timer timer;
    [SerializeField] private Image image;
    [SerializeField] private TextMeshProUGUI text;
+   private Timer timer;
+   
    private void Start()
    { 
        timer = GetComponent<Timer>();
@@ -33,19 +33,20 @@ public class ProductPanelConfigure : MonoBehaviour
       image.sprite = productData.ProductSprite;
       //image.rectTransform.sizeDelta = productData.ProductSprite.rect.size / 4;
 
-
       text.text = productData.ProductName;
-
    }
 
    public void SpawnProduct()
    {
        GameObject NewProduct = ObjectPool.Instance.GetFromPool(productData.ProductName);
-       EventManager.ProductPanelSpawnedObject(NewProduct);
+       
+       //EventManager.ProductPanelSpawnedObject(NewProduct);
+       
        NewProduct.transform.position = BuildingSystem.Instance.newProductSpawnPosition.position;
-       if (TryGetComponent(out Building building))
+       
+       if (NewProduct.CompareTag("Movable"))
        {
-           BuildingSystem.Instance.TakeArea(building.startCellPos.position,productData.ProductSize);
+           BuildingSystem.Instance.TakeArea(NewProduct.GetComponent<Building>().startCellPos.position,productData.ProductSize);
        }
       
        NewProduct.gameObject.SetActive(true);

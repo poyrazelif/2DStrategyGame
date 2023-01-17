@@ -7,14 +7,13 @@ public class ProductiveProduct :Building
 {
   [SerializeField] private Transform SpawnPosition;
   private Timer timer;
+  
   private void Start()
   {
     timer = GetComponent<Timer>();
     timer.SetTime(productData.ProduceTimeMin,productData.ProduceTimeSec);
     timer.WaitTime();
   }
-  
-  //yerleştiğinde timer başlayacak
 
   public void Spawn()
   {

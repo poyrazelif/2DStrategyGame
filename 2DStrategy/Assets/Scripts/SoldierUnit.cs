@@ -13,7 +13,6 @@ public class SoldierUnit : Product
     public Tilemap tilemap;
     public List<Vector3> wayPoints = new List<Vector3>();
     private List<Animator> animatorList = new List<Animator>();
-   // public LineRenderer linePath;
     private bool isTurnedLeft=true;
     private Coroutine followWayCoroutine;
 
@@ -35,45 +34,54 @@ public class SoldierUnit : Product
         
         if (followWayCoroutine != null)
             StopCoroutine(followWayCoroutine); 
+
         TargetPosition.z = 0;
         
         if (TargetPosition.x > transform.position.x && isTurnedLeft) { TurnRight();}
         else if(TargetPosition.x<=transform.position.x && !isTurnedLeft){ TurnLeft();}
         
-        PlayAnim("Walk");
-     
         wayPoints = AStar.FindPathClosest(tilemap, transform.position, TargetPosition);
-        /*if (wayPoints != null)
+        
+        if (wayPoints != null)
         {
             BuildingSystem.Instance.line.positionCount = wayPoints.Count;
             BuildingSystem.Instance.line.SetPositions(wayPoints.ToArray());
-        }*/
-
-        if (wayPoints != null)
-        {
-            followWayCoroutine=  StartCoroutine(CO_FollowWayPoints());
-        }
             
-
+            followWayCoroutine= StartCoroutine(CO_FollowWayPoints());
+        }
     }
 
     IEnumerator CO_FollowWayPoints()
     {
+        StopAnim("idle");
+        PlayAnim("walk");
+        
         foreach (Vector3 point in wayPoints)
         {
+            
             float waitTime = Vector3.Distance(point , transform.position)*.5f;
             transform.DOMove(new Vector3(point.x, point.y, 0),  waitTime).SetEase(Ease.Linear);
             yield return new WaitForSeconds(waitTime);
         }
         
-        PlayAnim("Idle");
+        StopAnim("walk");
+        PlayAnim("idle");
     }
 
+    public void StopAnim(string name)
+    {
+        foreach (var animator in animatorList)
+        {
+            animator.SetBool(name,false);
+        }
+    }
+
+    
     public void PlayAnim(string name)
     {
         foreach (var animator in animatorList)
         {
-            animator.SetTrigger(name);
+            animator.SetBool(name,true);
         }
     }
 

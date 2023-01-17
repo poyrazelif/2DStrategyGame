@@ -6,8 +6,7 @@ using UnityEngine.UI;
 
 public class InfiniteScroll : MonoBehaviour, IBeginDragHandler, IDragHandler, IScrollHandler
 {
-   [SerializeField] private ScrollContent scrollContent;
-    [SerializeField] private float outOfBoundsThreshold;
+    [SerializeField] private ScrollContent scrollContent;
     private ScrollRect scrollRect;
     private Vector2 lastDragPosition;
     private bool positiveDrag;
@@ -55,11 +54,11 @@ public class InfiniteScroll : MonoBehaviour, IBeginDragHandler, IDragHandler, IS
 
         if (positiveDrag)
         {
-            newPos.y = endItem.position.y - scrollContent.ChildHeight*2;
+            newPos.y = endItem.position.y - scrollContent.ChildHeight*2.5f;
         }
         else
         {
-            newPos.y = endItem.position.y + scrollContent.ChildHeight *2;
+            newPos.y = endItem.position.y + scrollContent.ChildHeight *2.5f;
         }
 
         currItem.position = newPos;
@@ -70,7 +69,7 @@ public class InfiniteScroll : MonoBehaviour, IBeginDragHandler, IDragHandler, IS
     {
         float posYThreshold = transform.position.y + scrollContent.Height * 0.5f + scrollContent.Height/2;
         float negYThreshold = transform.position.y - scrollContent.Height * 0.5f - scrollContent.Height/2;
-        return positiveDrag ? item.position.y - scrollContent.ChildWidth * 0.5f > posYThreshold : 
-            item.position.y + scrollContent.ChildWidth * 0.5f < negYThreshold;
+        return positiveDrag ? item.position.y - scrollContent.ChildHeight * 0.5f > posYThreshold : 
+            item.position.y + scrollContent.ChildHeight * 0.5f < negYThreshold;
     }
 }

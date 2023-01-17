@@ -15,18 +15,15 @@ public class FindPath : MonoBehaviour
     {
         if (Input.GetMouseButtonDown(0))
         {
-            Debug.Log("aaa");
             var mousePos = Camera.main.ScreenToWorldPoint(Input.mousePosition);
             mousePos.z = 0;
             endPos.position = mousePos;
             wayPoints = AStar.FindPathClosest(tilemap, transform.position, endPos.position);
             if (wayPoints != null)
             {
-
                 linePath.positionCount = wayPoints.Count;
                 linePath.SetPositions(wayPoints.ToArray());
             }
-
         }
     }
 }

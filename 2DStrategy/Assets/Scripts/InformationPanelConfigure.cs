@@ -18,7 +18,6 @@ public class InformationPanelConfigure : MonoBehaviour
     {
         EventManager.onSelectedObjChanged += ConfigurePanel;
         //EventManager.onProductPanelSpawnedObj += ConfigurePanel;
-
     }
 
     public void ConfigurePanel(GameObject gameObject)
@@ -28,6 +27,12 @@ public class InformationPanelConfigure : MonoBehaviour
 
     public void ConfigurePanel(ProductData productData)
     {
+        if (ProductImage.color.a == 0)
+        {
+            var tempColor = ProductImage.color;
+            tempColor.a = 1f;
+            ProductImage.color = tempColor;
+        }
         ProductImage.sprite = productData.ProductSprite;
         ProductName.text = productData.ProductName;
         
