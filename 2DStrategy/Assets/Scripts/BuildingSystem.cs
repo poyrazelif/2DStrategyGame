@@ -67,7 +67,19 @@ public class BuildingSystem : Singleton<BuildingSystem>
    public void TakeArea(Vector3 start, Vector3Int size)
    {
       Vector3Int startInt = GridLayout.WorldToCell(start);
-      tilemap.BoxFill(startInt,colorTile,startInt.x,startInt.y,startInt.x+size.x,startInt.y+size.y);
+      tilemap.BoxFill(startInt,colorTile,startInt.x,startInt.y,startInt.x+size.x-1,startInt.y+size.y-1);
+   }
+
+   public void RemoveArea(Vector3 start,Vector3Int size)
+   {
+      BoundsInt area = new BoundsInt();
+      area.size = size;
+      area.position =GridLayout.WorldToCell(start) ;
+
+      foreach (var t in area.allPositionsWithin)
+      {
+         tilemap.SetTile(t,null);
+      }
    }
    
 }

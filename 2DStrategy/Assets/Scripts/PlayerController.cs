@@ -7,7 +7,8 @@ public class PlayerController : MonoBehaviour
 {
    public GameObject SelectedObject;
    private Product selectedProduct;
-   private Transform selectedObjLastPos;
+   private Vector3 selectedObjLastPos;
+   private Vector3 selectedObjLastStartPos;
    private Vector3 offset;
    private Camera _camera;
 
@@ -49,10 +50,11 @@ public class PlayerController : MonoBehaviour
          if(BuildingSystem.Instance.CanBePlace(selectedProduct))
          {
             BuildingSystem.Instance.TakeArea(selectedProduct.startCellPos.position, selectedProduct.productData.ProductSize);
+            BuildingSystem.Instance.RemoveArea(selectedObjLastStartPos,selectedProduct.productData.ProductSize);
          }
          else
          {
-            SelectedObject.transform.position = selectedObjLastPos.position;
+            SelectedObject.transform.position = selectedObjLastPos;
          }
 
          selectedProduct.ChangeColor(Color.white);
@@ -73,31 +75,19 @@ public class PlayerController : MonoBehaviour
      return  _camera.ScreenToWorldPoint(Input.mousePosition);
    }
 
-   /*public void SelectedObjChangedByProductPanel(GameObject gameObject)
-   {
-      /*SelectedObject = gameObject;
-      selectedProduct = SelectedObject.GetComponent<Product>();
-      SelectedObject.tag = "Movable";
-      SelectedObject.transform.position = new Vector3(GetMouseWorldPosition().x,GetMouseWorldPosition().y,0);
-      SelectedObject.gameObject.SetActive(true);
-      Debug.Log("odododo");
-      if (SelectedObject.tag == "Movable")
-      {
-         offset = SelectedObject.transform.position - GetMouseWorldPosition();
-      }#1#
-   }*/
-
    public void UnSelectObject()
    {
       SelectedObject = null;
       selectedProduct = null;
-      selectedObjLastPos = null;
+      selectedObjLastPos = Vector3.zero;
+      selectedObjLastStartPos = Vector3.zero;
    }
    public void SelectObject(GameObject selectedObject)
    {
       SelectedObject = selectedObject;
-      selectedObjLastPos = SelectedObject.transform;
+      selectedObjLastPos = SelectedObject.transform.position;
       selectedProduct = SelectedObject.GetComponent<Product>();
+      selectedObjLastStartPos = selectedProduct.startCellPos.position;
       EventManager.SelectedObjectChanged(selectedProduct.productData);
       if (SelectedObject.tag == "Movable")
       {

@@ -4,22 +4,12 @@
     <list default="true" id="fa576b04-f557-4af3-8252-7163cf1cfb7c" name="Changes" comment="">
       <change beforePath="$PROJECT_DIR$/.idea/.idea.2DStrategy/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/.idea.2DStrategy/.idea/workspace.xml" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/Assets/Prefabs/Buildings/Barrack Variant.prefab" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/Prefabs/Buildings/Barrack Variant.prefab" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/Assets/Prefabs/Buildings/Building.prefab" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/Assets/Prefabs/Buildings/Building.prefab.meta" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/Assets/Prefabs/UI/Product_Example.prefab" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/Prefabs/UI/Product_Example.prefab" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/Assets/Prefabs/UI/Product_Scroll_infinite.prefab" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/Prefabs/UI/Product_Scroll_infinite.prefab" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/Assets/Scenes/SampleScene.unity" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/Scenes/SampleScene.unity" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/Assets/Scripts/BuildingSystem.cs" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/Scripts/BuildingSystem.cs" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/Assets/Scripts/EventManager.cs" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/Scripts/EventManager.cs" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/Assets/Scripts/InformationPanelConfigure.cs" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/Scripts/InformationPanelConfigure.cs" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/Assets/Scripts/PlayerController.cs" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/Scripts/PlayerController.cs" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/Assets/Scripts/Product.cs" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/Scripts/Product.cs" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/Assets/Scripts/ProductData.cs" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/Scripts/ProductData.cs" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/Assets/Scripts/ProductDatas/BarrackData.asset" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/Scripts/ProductDatas/BarrackData.asset" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/Assets/Scripts/ProductPanelConfigure.cs" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/Scripts/ProductPanelConfigure.cs" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/Assets/Scripts/SoldierUnit.cs" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/Scripts/SoldierUnit.cs" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/Assets/Sprites/Buildings/barrack1.png.meta" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/Sprites/Buildings/barrack1.png.meta" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/Assets/TextMesh Pro/Resources/Fonts &amp; Materials/LiberationSans SDF.asset" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/TextMesh Pro/Resources/Fonts &amp; Materials/LiberationSans SDF.asset" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -109,7 +99,7 @@
       <option name="presentableId" value="Default" />
       <updated>1673540974746</updated>
       <workItem from="1673540976698" duration="73880000" />
-      <workItem from="1673927174858" duration="14079000" />
+      <workItem from="1673927174858" duration="18325000" />
     </task>
     <servers />
   </component>

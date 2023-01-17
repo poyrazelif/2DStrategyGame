@@ -40,6 +40,7 @@ public class ProductPanelConfigure : MonoBehaviour
        GameObject NewProduct = ObjectPool.Instance.GetFromPool(productData.ProductName);
        EventManager.ProductPanelSpawnedObject(NewProduct);
        NewProduct.transform.position = BuildingSystem.Instance.newProductSpawnPosition.position;
+       BuildingSystem.Instance.TakeArea(NewProduct.GetComponent<Product>().startCellPos.position,productData.ProductSize);
        NewProduct.gameObject.SetActive(true);
    }
    
